@@ -1,4 +1,4 @@
-# NBA analysis 
+# NBA analysis API
  Working with data from the National Basketball Association.
 
 - How many points does LeBron needs to surprass Kareem and Malone? 
