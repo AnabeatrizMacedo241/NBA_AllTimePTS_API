@@ -28,7 +28,7 @@ for c in range(2):
     prox_pag()
 driver.quit()
 #df.to_csv('nba_ALLTIME.csv', index=False)
-#Locates the top 3 players ny their names
+#Locates the top 3 players by their names
 kareem = df.loc[(df['Player']=='Kareem Abdul-Jabbar')]
 malone = df.loc[(df['Player']=='Karl Malone')]
 lebron = df.loc[(df['Player']=='LeBron James')]
