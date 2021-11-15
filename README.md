@@ -1,5 +1,4 @@
-# NBA analysis API
+# NBA all-time points analysis API
  Working with data from the National Basketball Association.
-
-- How many points does LeBron needs to surprass Kareem and Malone? 
-- How many games, approximately, he will be able to surprass them? 
+ 
+ ## Still in progress
