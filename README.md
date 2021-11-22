@@ -31,6 +31,7 @@
 |`mostRebounds()`| Returns the player with the most Rebounds and their table Ranking position |
 |`mostAssists()`| Returns the player with the most Assists and their table Ranking position   |
 |`mostSteals()`| Returns the player with the most Steals and their table Ranking position     |
+|`mostBlocks()`| Returns the player with the most Blocks and their table Ranking position     |
 |`mostTurnovers()`| Returns the player with the most Turnovers and their table Ranking position |
 |`bestOffensivePlayer()`| Returns the best Offensive Player and their table Ranking position  |
 |`bestDefensivePlayer()`| Returns the best Defensive Player and their table Ranking position
