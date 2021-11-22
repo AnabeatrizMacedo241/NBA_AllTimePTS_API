@@ -34,15 +34,15 @@ def get_table(driver, n_pages):
     return clean_df(df)
 
 def get_player(df, player_name):
-    player = df.loc[(df['Player']==player_name)]
+    player = df.loc[player_name]
     if len(player)==0:
         raise  ExceptionPlayerName('No results for this player, check if you wrote his name correctly.')
     return(player)
 
 def top3(df): #Top 3 points leader function
-     print('First, {}: {} points'.format(df['Player'][0], df['PTS'][0]))
-     print('Second, {}: {} points'.format(df['Player'][1], df['PTS'][1]))
-     print('Third, {}: {} points'.format(df['Player'][2], df['PTS'][2]))
+     print(f'First, {tabela.index[0]}: {round(tabela.PTS[0])} points')
+     print(f'Second, {tabela.index[1]}: {round(tabela.PTS[1])} points')
+     print(f'Third, {tabela.index[2]}: {round(tabela.PTS[2])} points')
 
 def isLebronLeader(df): #LeBron all-time leader function
     df_lebron = df.copy()
@@ -54,15 +54,15 @@ def isLebronLeader(df): #LeBron all-time leader function
     difference_second =  pts_second-pts_lebron
     games_first = difference_first/lebronMeanPTS
     games_second = difference_second/lebronMeanPTS
-    if pts_lebron>38387:
+    if pts_lebron>pts_first:
         print('Lebron is the all-time NBA points leader!')
-    elif pts_lebron>36928:
+    elif pts_lebron>pts_second:
         print('Lebron is the second all-time NBA points leader!')
-        print('Lebron needs to score {} points in {} to surprass {}'.format(difference_first,round(games_first), df['Player'][0]))
+        print(f'Lebron needs to score {round(difference_first)} points in {round(games_first)} to surprass {tabela.index[0]}')
     else:
         print('Lebron is still the third all-time NBA points leader')
-        print('Lebron needs {} points in {} games to surprass {}'.format(difference_first,round(games_first),df_lebron.index[0]))
-        print('Lebron needs {} points in {} games to surprass {}'.format(difference_second,round(games_second),df_lebron.index[1]))
+        print(f'Lebron needs to score {round(difference_first)} points in {round(games_first)} to surprass {tabela.index[0]}')
+        print(f'Lebron needs {round(difference_second)} points in {round(games_second)} games to surprass {df_lebron.index[1]}')
 
 def bestTS(df):
     ts = df['TS%'].max()
@@ -103,7 +103,7 @@ def overallStats(df, player_name):
     topg = player['TOV']/player['GP']
     if len(player)==0:
         raise  ExceptionPlayerName('No results for this player, check if you wrote his name correctly.')
-    print(f'{player_name} stats:\nMPG:{mpg}\nPPG:{ppg}\nRPG:{rpg}\nAPG:{apg}\nSPG:{spg}\nTOPG:{topg}')
+    print(f'{player_name} stats:\nMPG:{mpg:.1f}\nPPG:{round(ppg,1)}\nRPG:{round(rpg,1)}\nAPG:{round(apg,1)}\nSPG:{round(spg,1)}\nTOPG:{round(topg,1)}')
   
 def overallRebounds(df, player_name):
     player = df.loc[player_name]
