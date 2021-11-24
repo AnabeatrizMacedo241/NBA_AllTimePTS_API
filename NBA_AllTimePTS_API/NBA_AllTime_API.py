@@ -4,6 +4,8 @@ Created on Tue Nov 23 14:01:23 2021
 @author: anabeatrizmacedo
 """
 import pandas as pd
+import seaborn as sns
+from selenium import webdriver
 class NBA_AllTime:
     def __init__(self, driver, n_pages):
         self.driver=driver
@@ -45,7 +47,7 @@ class Stats(NBA_AllTime):
             raise  ExceptionPlayerName('No results for this player, check if you wrote his name correctly.')
         return(player)
 
-    def top3(self):
+    def top3Chart(self):
         print(f'First, {self.df.index[0]}: {round(self.df.PTS[0])} points')
         print(f'Second, {self.df.index[1]}: {round(self.df.PTS[1])} points')
         print(f'Third, {self.df.index[2]}: {round(self.df.PTS[2])} points')
