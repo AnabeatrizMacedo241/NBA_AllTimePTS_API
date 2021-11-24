@@ -4,14 +4,17 @@ with open('README.md', encoding="utf-8") as f:
     long_description = f.read()
 
 setup(
-    name = 'CENIPA_API',
+    name = 'NBA_AllTimePTS_API',
     version = '0.0.1',
     description = 'Data about the NBA All-Time points leaders table.',
     long_description = long_description,
     long_description_content_type='text/markdown',
     author = 'Ana Beatriz Macedo',
     author_email = '<anabeatrizmacedo241@gmail.com>', 
-    packages = ['NBA_AllTimePTS'],
+    packages = ['NBA_AllTimePTS_API'],
+    install_requires=[
+        'pandas',
+        'selenium'
     license= 'MIT',
     keywords = ['API', 'NBA', 'Basketball', 'Points', 'LeBron James','Assists','Player', 'Sports'],
     classifiers = [
