@@ -5,7 +5,7 @@
 
 ## Installation
 
-    (Not done yet)
+    pip install NBA-AllTimePTS-API
     
 ## Importing
 
