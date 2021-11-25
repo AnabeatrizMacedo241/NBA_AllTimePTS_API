@@ -21,7 +21,6 @@ setup(
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
-        'Natural Language :: Portuguese (Brazilian)',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3.9',
         'Topic :: Database',
