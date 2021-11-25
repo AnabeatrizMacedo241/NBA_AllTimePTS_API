@@ -6,7 +6,7 @@ with open('README.md', encoding="utf-8") as f:
 setup(
     name = 'NBA_AllTimePTS_API',
     version = '0.0.1',
-    url = 'https://github.com/AnabeatrizMacedo241/NBA_analysis',
+    url = 'https://github.com/AnabeatrizMacedo241/NBA_analysis/',
     description = 'Data about the NBA All-Time points leaders table.',
     #long_description=Path("README.md").read_text(encoding="utf-8"),
     long_description_content_type='text/markdown',
