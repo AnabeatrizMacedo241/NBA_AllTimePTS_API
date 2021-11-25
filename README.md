@@ -1,16 +1,14 @@
 # NBA all-time points analysis API
  Working with data from the National Basketball Association all-time points leaders table.
- 
- ## Still in progress
 
 ## Installation
-
+```python
     pip install NBA-AllTimePTS-API
-    
+```   
 ## Importing
-
+```python
     from NBA_AllTimePTS_API import Stats
-
+```
 ## Documentaion
 
 ### Methods
