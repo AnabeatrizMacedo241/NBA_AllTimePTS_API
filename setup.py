@@ -8,7 +8,7 @@ setup(
     version = '0.0.1',
     url = 'https://github.com/AnabeatrizMacedo241/NBA_analysis',
     description = 'Data about the NBA All-Time points leaders table.',
-    #long_description=Path("README.md").read_text(encoding="utf-8"),
+    long_description=long_description,
     long_description_content_type='text/markdown',
     author = 'Ana Beatriz Macedo',
     author_email = '<anabeatrizmacedo241@gmail.com>', 

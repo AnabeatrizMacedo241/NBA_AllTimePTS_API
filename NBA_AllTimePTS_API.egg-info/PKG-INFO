@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: NBA-AllTimePTS-API
+Version: 0.0.1
+Summary: Data about the NBA All-Time points leaders table.
+Home-page: https://github.com/AnabeatrizMacedo241/NBA_analysis
+Author: Ana Beatriz Macedo
+Author-email: <anabeatrizmacedo241@gmail.com>
+License: MIT
+Keywords: API,NBA,Basketball,Points,LeBron James,Assists,Player,Sports
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
