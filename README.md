@@ -9,7 +9,7 @@
     
 ## Importing
 
-    (Not done yet)
+    from NBA_AllTimePTS_API import Stats
 
 ## Documentaion
 
