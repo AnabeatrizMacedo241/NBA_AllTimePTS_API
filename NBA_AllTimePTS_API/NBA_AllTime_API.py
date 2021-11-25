@@ -6,6 +6,7 @@ Created on Tue Nov 23 14:01:23 2021
 import pandas as pd
 import seaborn as sns
 from selenium import webdriver
+import time
 class NBA_AllTime:
     def __init__(self, driver, n_pages):
         self.driver=driver
@@ -18,6 +19,7 @@ class NBA_AllTime:
             #print(web_element.text)
             df2 = pd.read_html(web_element.get_attribute('outerHTML'))
             df = df.append(df2)
+            time.sleep(2)
             self._prox_pag()
         self.driver.quit()
         self._clean_df(df)
