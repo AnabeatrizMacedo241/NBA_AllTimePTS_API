@@ -68,10 +68,10 @@ class Stats(NBA_AllTime):
             print('Lebron is the all-time NBA points leader!')
         elif pts_lebron>pts_second:
             print('Lebron is the second all-time NBA points leader!')
-            print(f'Lebron needs to score {round(difference_first)} points in {round(games_first)} to surprass {self.df.index[0]}')
+            print(f'Lebron needs to score {round(difference_first)} points in {round(games_first)} games to surprass {self.df.index[0]}')
         else:
             print('Lebron is still the third all-time NBA points leader')
-            print(f'Lebron needs to score {round(difference_first)} points in {round(games_first)} to surprass {self.df.index[0]}')
+            print(f'Lebron needs to score {round(difference_first)} points in {round(games_first)} games to surprass {self.df.index[0]}')
             print(f'Lebron needs {round(difference_second)} points in {round(games_second)} games to surprass {df_lebron.index[1]}')
 
     def bestTS(self):
@@ -173,7 +173,7 @@ class Stats(NBA_AllTime):
         player = self.df.loc[self.df['OFE']==higherOFE]
         player_name = player.index[0]
         position = player.loc[player.index[0], 'Ranking']
-        print(f'Best offensive player efficiency is {player_name} with a {higherOFE} and he is at the {position}th place on the all-time points list.')
+        print(f'Best offensive player efficiency is {player_name} with a {round(higherOFE,1)} and he is at the {position}th place on the all-time points list.')
         
     def bestDefensivePlayer(self): #40 is an outstanding performance, 10 is an average performance
         self.df['DFE'] = ((self.df['STL']+self.df['BLK']+self.df['REB'])/self.df['GP'])
@@ -181,9 +181,9 @@ class Stats(NBA_AllTime):
         player = self.df.loc[self.df['DFE']==higherDFE]
         player_name = player.index[0]
         position = player.loc[player.index[0], 'Ranking']
-        print(f'Best defense player efficiency is {player_name} with a {higherDFE} and he is at the {position}th place on the all-time points list.')
+        print(f'Best defense player efficiency is {player_name} with a {round(higherDFE,2)} and he is at the {position}th place on the all-time points list.')
         
 class ExceptionPlayerName(Exception):
     pass
 
-#tabela = get_table(webdriver.Chrome(),1)
+#tabele = get_table(webdriver.Chrome(),1)

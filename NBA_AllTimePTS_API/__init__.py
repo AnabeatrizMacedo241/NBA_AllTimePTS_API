@@ -1,1 +1,1 @@
-from .NBA_AllTimePTS import *
+from .NBA_AllTime_API import *
