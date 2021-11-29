@@ -17,7 +17,7 @@
 | :----------------------------- | :------------------------------------------------------------------------------------------------------------------- |
 |`get_table(driver, n_pages)`| Returns a dataset with the players data by the number of pages you insert                                                                                         |
 |`get_player( , player_name)`| Returns information of a specific player |
-|`top3()`| Returns the top 3 all-time points leaders of NBA  |
+|`top3Chart()`| Returns the top 3 all-time points leaders of NBA  |
 |`isLebronLeader()`| Returns how many points and games LeBron needs to become the all-time points leader or if he has already become the leader                                                            |
 |`bestTS()`| Returns the player with the best TS% and their table Ranking position   |
 |`bestFG()`| Returns the player with the best FG% and their table Ranking position   |
