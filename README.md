@@ -36,6 +36,8 @@ Have you ever wondered who is the player with most points on the NBA? Or how lon
 
 <strong>Example of use</strong>
 
+<img width="1182" alt="Screen Shot 2021-11-30 at 15 42 40" src="https://user-images.githubusercontent.com/84348494/144108221-aabc3efc-0569-4c3a-840b-e934e16bbe4f.png">
+
 <br />
 	
 <h2 id="functions">Methods</h2>
