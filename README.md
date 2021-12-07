@@ -1,4 +1,4 @@
-# NBA all-time points analysis API
+# NBA all-time points analysis API 🏀
 <h4><a href="#introduction">About the API</a> | <a href="#instruction">How to use</a> | <a href="#reference">Reference</a> | <a href="#functions">Documentation</a> | <a href="#code">Github</a> </h4>
 
 <br />
