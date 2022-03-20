@@ -39,7 +39,9 @@ Have you ever wondered who is the player with most points on the NBA? Or how lon
 <img width="1182" alt="Screen Shot 2021-11-30 at 15 42 40" src="https://user-images.githubusercontent.com/84348494/144108221-aabc3efc-0569-4c3a-840b-e934e16bbe4f.png">
 
 <br />
-	
+<p>
+	*On March 19th 2022, LeBron James became the second All-time points leader in regular seasons surprasssing Karl Malone.
+</p>
 <h2 id="functions">Methods</h2>
 
 | Method:                | What the method does:                                                                                                   |
