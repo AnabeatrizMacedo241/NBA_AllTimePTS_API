@@ -66,7 +66,7 @@ class Stats(NBA_AllTime):
         games_second = difference_second/lebronMeanPTS
         if pts_lebron>pts_first:
             print('Lebron is the all-time NBA points leader!')
-        elif pts_lebron>pts_second:
+        elif pts_lebron>36928:
             print('Lebron is the second all-time NBA points leader!')
             print(f'Lebron needs to score {round(difference_first)} points in {round(games_first)} games to surprass {self.df.index[0]}')
         else:
