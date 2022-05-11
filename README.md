@@ -57,6 +57,8 @@ Have you ever wondered who is the player with most points on the NBA? Or how lon
 |`overallStats( , player_name)`| Returns the MPG, PPG, RPG, APG, SPG and TOPF of a specific player  |
 |`overallRebounds( , player_name)`| Returns the % of offensive and defensive rebounds of a specific player  |
 |`tovPercent( , player_name)`| Estimate percentage of turnovers per 100 plays by a specific player |
+|`EFG( , player_name)`| Returns the Effective Field Goal Percentage of a specific player  |
+|`PER( , player_name)`| Returns the Player Efficiency Rating of a specific player  |
 |`mostRebounds()`| Returns the player with the most Rebounds and their table Ranking position |
 |`mostAssists()`| Returns the player with the most Assists and their table Ranking position   |
 |`mostSteals()`| Returns the player with the most Steals and their table Ranking position     |
