@@ -79,7 +79,7 @@ class Stats(NBA_AllTime):
         player = self.df.loc[self.df['TS%']==ts]
         player_name = player.index[0]
         position = player.loc[player.index[0], 'Ranking']
-        print(f'Best FG% is {ts}% from {player_name} in the {position}th place on the all-time points list.')
+        print(f'Best TS% is {ts}% from {player_name} in the {position}th place on the all-time points list.')
         
     def bestFG(self):
         fg = self.df['FG%'].max()
@@ -131,6 +131,28 @@ class Stats(NBA_AllTime):
         if len(player)==0:
             raise  ExceptionPlayerName('No results for this player, check if you wrote his name correctly.')
         print(f'The TOV% of {player_name} is {tov}%.')
+    
+    def EFG(self, player_name):
+        player = self.df.loc[player_name]
+        efg = player['FGM']+(0.5*(player['3PM']/player['FGA']))
+        if len(player)==0:
+            raise  ExceptionPlayerName('No results for this player, check if you wrote his name correctly.')
+        print(f'The EFG% of {player_name} is {round(efg)}%.')
+        
+    def PER(self, player_name):
+        player = self.df.loc[player_name]
+        ppg = player['PTS']/player['GP']
+        rpg = player['REB']/player['GP']
+        apg = player['AST']/player['GP']
+        spg = player['STL']/player['GP']
+        topg = player['TOV']/player['GP']
+        blk=player['BLK']/player['GP']
+        missedFG=(player['FGA']-player['FGM'])/player['GP']
+        missedFT=(player['FTA']-player['FTM'])/player['GP']
+        efficiency=ppg+rpg+apg+spg+blk-topg-missedFG-missedFT
+        if len(player)==0:
+            raise  ExceptionPlayerName('No results for this player, check if you wrote his name correctly.')
+        print(f'The efficiency of {player_name} is {round(efficiency)}%.')
         
     def mostRebounds(self):
         mostREB = self.df['REB'].max()
